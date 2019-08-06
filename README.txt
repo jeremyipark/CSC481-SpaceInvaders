@@ -1,0 +1,24 @@
+SpaceInvaders: How to Run
+
+Controls:
+left: left
+right: right
+space: shoot
+
+First, ensure that the core.jar is in the build path of the project.
+
+Next, run src/server/GameServer.java as a Java Application.
+The window will now display the game world with six enemy ships.
+When clients connect, the mothership will show on bottom of the screen.
+The GameServer accepts no user input.
+
+Next, run src/client/ClientWorld.java as a Java Application.
+Move the character around on the screen with left and right to dodge projectiles.
+Shoot projectiles with the space bar.
+Win the game by killing all enemy ships without losing all HP.
+
+In order to demonstrate scripting, go to the src/scripting package.
+move_enemy.js will allow changing of the speed at which the enemies travel.
+move_mothership.js will allow changing of the speed at which the mothership travels.
+move_projectile.js will allow changing of the speed at which the projectiles travels.
+For example, if you want to change the projectile speed, change the value added to obj.y in move_projectile.js.
